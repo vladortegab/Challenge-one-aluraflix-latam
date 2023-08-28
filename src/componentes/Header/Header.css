@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  border: 1px solid #000;
+  background: var(--color-black-dark, rgba(0, 0, 0, 1.0));
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 1.69rem 2.5rem;
+  max-height: 10rem;
+  overflow: hidden;
+  z-index: 1;
+}
+.header img {
+  width: 10.52813rem;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.header button {
+  width: 11.25781rem;
+  height: 3.375rem;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+.header__button {
+  border-radius: 0.25rem;
+  border: 1px solid var(--color-gray-light, #f5f5f5);
+  background: var(--color-black-dark, rgba(0, 0, 0, 0.9));
+  color: #fff;
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-size: 1.3125rem;
+  font-style: normal;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+.header__button:hover {
+    transform: translateY(2px); /* Efecto de hundimiento en hover */
+  }
+  
+  .header__button:active {
+    transform: translateY(4px); /* Efecto de hundimiento más pronunciado al hacer clic */
+  }

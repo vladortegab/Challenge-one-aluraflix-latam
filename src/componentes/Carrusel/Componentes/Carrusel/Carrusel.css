@@ -1,0 +1,217 @@
+.main__section__products {
+    width: 100%;
+    /* height: 40rem; */
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    background: white;
+}
+.header_title_product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    flex-direction: row;
+    margin-left: 3rem;
+}
+.text_title_product {
+   
+    padding-left: 3vw;
+    font-family: Roboto;
+    display: flex;
+    font-style: normal;
+    
+    line-height: normal;
+
+
+    width: 37.5rem;
+    height: 3.75rem;
+    flex-shrink: 0;
+    
+    font-size: 2.1875rem;
+    flex-direction: column;
+    justify-content: center;
+    
+    font-weight: 400;
+    text-align: center;
+    
+    border-radius: 0.25rem;
+    color: var(--color-gray-light, #6bd1ff);
+    background: var(--color-frontend, #6bd1ff);
+}
+.see_all_container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-right: 3vw;
+    text-decoration: none;
+    transition: 0.3s;
+}
+  .see_all_container:hover {
+    color: var(--black, #464646);
+    font-weight: bold;
+  }
+  
+  .product_container {
+    background-color: var(--white);
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    position: relative;
+    min-width: 30vw;
+    height: 17vw;
+}
+
+  .products_container_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    flex-wrap: wrap;
+  }
+  
+  .product_container:hover {
+    transform: scale(102%);
+    transition: 0.3s;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .title_product {
+    padding-top: 0.5rem;
+    color: var(--preto-100, #000000);
+    text-align: center;
+    font-size: 0.875rem;
+  }
+  .price_product {
+    padding-top: 0.25rem;
+    color: var(--preto-100, #000000);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .see_product {
+    color: var(--azul-100, #2a7ae4);
+    float: right;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline;
+    font-weight: 700;
+    padding: 1rem 0rem;
+  }
+  .see_product:hover {
+    color: var(--azul-100);
+  }
+  
+  .img_product_item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+  .img_product_item:hover {
+    filter: brightness(0.8);
+  }
+  .img_product_item_delete{
+    position: absolute;
+    top: 8%;
+    left: 61%;
+    width: 10%;
+  
+  }
+  .img_product_item_edit{
+    position: absolute;
+    top: 8%;
+    left: 75%;
+    width: 10%;
+  }
+  
+  /* Mobile Phones */
+  @media screen and (max-width: 320px) {
+    .img_product_item {
+      width: 100%;
+      height: 25vh;
+    }
+    .img_product_item_delete{
+      position: absolute;
+      top: 8%;
+      left: 61%;
+      
+    
+    }
+    .img_product_item_edit{
+      position: absolute;
+      top: 8%;
+      left: 75%;
+    }
+  }
+  
+  @media screen and (min-width: 321px) and (max-width: 780px) {
+    .img_product_item {
+      width: 100%;
+      height: 40vw;
+    }
+    .img_product_item_delete{
+      position: absolute;
+      top: 8%;
+      left: 61%;
+    
+    }
+    .img_product_item_edit{
+      position: absolute;
+      top: 8%;
+      left: 75%;
+    }
+  }
+  
+  /* Mobile Phones */
+  @media screen and (max-width: 320px) {
+    .text_title_product {
+      font-size: 2rem;
+    }
+  
+    .product_media_query {
+      display: none;
+    }
+  
+    .product_container {
+      width: 33vw;
+      margin-bottom: 2rem;
+    }
+  
+  
+  
+    .title_product {
+      font-size: 1.2rem;
+    }
+  
+    .see_product {
+      padding-top: 1rem;
+    }
+  }
+  
+  @media screen and (min-width: 321px) and (max-width: 780px) {
+    .product_media_query {
+      display: none;
+    }
+  
+    .product_container {
+      width: 36vw;
+      margin-bottom: 1rem;
+    }
+    .see_product {
+      padding-top: 0.5rem;
+    }
+  }
+  
+  /* Tablets */
+  @media screen and (min-width: 781px) and (max-width: 1024px) {
+    .product_media_query {
+      display: none;
+    }
+  
+    .product_container {
+      width: 18.5vw;
+    }
+  }
+  
